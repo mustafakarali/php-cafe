@@ -3,7 +3,7 @@ th{
 	color:#fff;
 }
 
-body { padding-top: 70px; }
+body { background-color: #f8f8f8; }
 
 #logo {
 	float:left;
@@ -53,3 +53,4 @@ table{
 .md-height{
     line-height:2em;
 }
+

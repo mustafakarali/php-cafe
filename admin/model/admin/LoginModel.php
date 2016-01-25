@@ -10,4 +10,8 @@
  */
 class LoginModel {
 
+    public function login($userName,$password){
+        $sql = 'select * from t_pub_user where userName = ? and userPwd = ?';
+        return DB::select($sql,[$userName,$password]);
+    }
 }

@@ -18,13 +18,34 @@ class LoginController extends Controller {
         $this->loginModel = ModelFactory::build('login');
         $this->authModel = ModelFactory::build('auth');
     }
+    public function index(){
+        $this->view = View::build('admin/LoginView');
+    }
 
     public function login(){
+
+        $userName = $_REQUEST['username'];
+        $userPwd = $_REQUEST['userpwd'];
+        $userAttr = $this->loginModel->login($userName,$userPwd);
+        if(count($userAttr) > 0){
+            session_start();
+            $_SESSION['user'] = $userAttr[0];
+
+            $this->log->debug($userAttr[0]['userName']." login successfully.");
+            echo "1";
+            return;
+        }else{
+            echo "0";
+            return;
+        }
+
+    }
+    public function main(){
 
         $menuArr = $this->authModel->queryAuth('1');
         $leftMenu = new LeftMenu($menuArr);
 
-        $_REQUEST['leftMenu'] = $leftMenu;
+        $_SESSION['leftMenu'] = $leftMenu;
 
         $this->view = View::build('admin/MainView');
     }

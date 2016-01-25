@@ -43,7 +43,7 @@
     </ul>
     <!-- /.navbar-top-links -->
 
-    <?php $_REQUEST['leftMenu']->outputMenu()?>
+    <?php $_SESSION['leftMenu']->outputMenu()?>
 
     <!-- sidebar -->
 </nav>
