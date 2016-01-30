@@ -11,6 +11,7 @@
      *  28-11-2015          Xiaoming Yang       delete useless comment
      *  07-01-2016          Xiaoming Yang       add log function
      *  25-01-2016          Xiaoming Yang       solve the session validation bug
+     *  30-01-2016          Xiaoming Yang       check session status by !isset($_SESSION)
 	*/
 	
 	class Controller{
@@ -65,11 +66,21 @@
                 if(!isset($_SESSION['user'])) {
                     self::redirect('login/index');
                 }
-            }*/
-
+            }
             if(!empty($_REQUEST['rController']) && !($_REQUEST['rController'] == 'login' && $method =='index') && !($_REQUEST['rController'] == 'login' && $method =='login')){
-                session_start();
+                echo "check session before"."<br>";
+                if(!isset($_SESSION)){
+                    session_start();
+                }
+                echo "check session before"."<br>";
                 if(!isset($_SESSION['user'])) {
+                    self::redirect('login/index');
+                }
+            }*/
+            if(!empty($_REQUEST['rController']) && !isset($_SESSION)){
+
+                session_start();
+                if(!isset($_SESSION['user']) && !($_REQUEST['rController'] == 'login' && $method =='index') && !($_REQUEST['rController'] == 'login' && $method =='login')) {
                     self::redirect('login/index');
                 }
             }
