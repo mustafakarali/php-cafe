@@ -23,11 +23,11 @@ class LoginController extends Controller{
             $userPwd = $_REQUEST['userpwd'];
             $userAttr = $this->loginModel->login($userName,$userPwd);
             if(count($userAttr) > 0){
-                session_start();
+                //session_start();
                 $_SESSION['user'] = $userAttr[0];
                 //parent::redirect("topic/listTopics");
                 $this->log->debug($userAttr[0]['userName']." login successfully.");
-                $this->view = View::build('welcome');
+                $this->view = View::build('product/ProductView');
             }else{
                 $this->view = View::build('failure');
             }

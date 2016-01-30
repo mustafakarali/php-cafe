@@ -13,5 +13,7 @@
  */
 return [
 
-    'login' => 'admin/LoginController.php'
+    'login' => 'admin/LoginController.php',
+    'product' => 'product/ProductController.php'
+
 ];

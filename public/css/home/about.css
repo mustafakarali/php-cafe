@@ -1,0 +1,26 @@
+main  h1:first-child{
+	padding-top:1.5em;
+}
+#rightside{
+	margin-top:5.5em;
+}
+#rightside ul{
+	list-style:none;
+}
+#rightside li{
+	padding:0.5em;
+}
+#rightside ul a{
+	text-decoration:none;
+	padding:0.3em 1em;
+}
+#rightside ul a:hover{
+	border-left:2px solid #000;
+}
+.wrapper{
+	margin-bottom:4em;
+}
+.team img{
+		width:12em;
+		height:12em;
+}

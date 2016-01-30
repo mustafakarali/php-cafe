@@ -16,8 +16,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+    <link href="<?php echo ROOT_PATH; ?>/public/images/icon.png" rel="shortcut icon" />
     <link rel="stylesheet" type="text/css" href="<?php echo ROOT_PATH; ?>/public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo ROOT_PATH; ?>/public/css/style.css">
     <title>Tsun Cafe</title>
     <style>
         #msg{
@@ -58,7 +58,7 @@
 </div>
 <script src="<?php echo ROOT_PATH;?>/public/js/jquery-1.11.3.min.js"></script>
 <script src="<?php echo ROOT_PATH;?>/public/js/bootstrap.min.js"></script>
-<script src="<?php echo ROOT_PATH;?>/public/js/admin/login.js"></script>
+<script src="<?php echo ROOT_PATH;?>/public/js/admin/admin/login.js"></script>
 </body>
 
 </html>

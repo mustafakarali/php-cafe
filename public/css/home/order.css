@@ -1,0 +1,19 @@
+
+main  h1:first-child{
+	padding-top:1.5em;
+}
+.wrapper{
+	width:80%;
+	margin:0 auto;
+	margin-bottom:4em;
+}
+.team img{
+		width:12em;
+		height:12em;
+}
+#link-order{
+	margin-top:3em;
+}
+#btn-order{
+	margin-top:3em;
+}

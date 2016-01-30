@@ -1,0 +1,46 @@
+main{
+	margin-top:3em;
+}
+#rightmap{
+	border:0;
+}
+iframe{
+	width:42em;
+	height:21em;
+}
+.divider-header {
+	display: block;
+	width: 2.5em;
+	height: 2px;
+	margin: 0 auto;
+	margin-bottom: 0.7em;
+	background:#666;
+}
+#contact{
+	margin-top:4em;
+	margin-bottom:3em;
+}
+
+@media(max-width:50em){
+	iframe{
+	width:33em;
+	height:16em;
+}
+}
+@media(min-width:30em) and (max-width:37em){
+	iframe{
+	width:27em;
+	height:12em;
+}
+}
+@media(max-width:30em){
+	iframe{
+		width:22em;
+		height:10em;
+	}
+}
+
+
+
+
+

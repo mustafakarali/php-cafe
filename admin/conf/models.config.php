@@ -13,7 +13,8 @@
 
 return [
     'login' => 'admin/LoginModel.php',
-    'auth' => 'admin/AuthModel.php'
+    'auth' => 'admin/AuthModel.php',
+    'product' => 'product/ProductModel.php'
 
 ];
 

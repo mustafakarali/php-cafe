@@ -10,10 +10,10 @@
 return [
     'mysql' => [
         'driver'    => 'mysql',
-        'host'      => 'localhost',
+        'host'      => '192.168.56.2',
         'database'  => 'cafe',
         'username'  => 'cafeadmin',
-        'password'  => 'admin',
+        'password'  => 'Admin123!',
         'charset'   => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix'    => '',

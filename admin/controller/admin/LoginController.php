@@ -28,7 +28,7 @@ class LoginController extends Controller {
         $userPwd = $_REQUEST['userpwd'];
         $userAttr = $this->loginModel->login($userName,$userPwd);
         if(count($userAttr) > 0){
-            session_start();
+            //session_start();
             $_SESSION['user'] = $userAttr[0];
 
             $this->log->debug($userAttr[0]['userName']." login successfully.");
@@ -43,9 +43,9 @@ class LoginController extends Controller {
     public function main(){
 
         $menuArr = $this->authModel->queryAuth('1');
-        $leftMenu = new LeftMenu($menuArr);
+        //$leftMenu = new LeftMenu($menuArr);
 
-        $_SESSION['leftMenu'] = $leftMenu;
+        $_SESSION['menuArr'] = $menuArr;
 
         $this->view = View::build('admin/MainView');
     }

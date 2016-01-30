@@ -1,0 +1,40 @@
+
+main  h1:first-child{
+	padding-top:1.5em;
+}
+
+.media img{
+		width:12em;
+		height:6em;
+}
+.media a:hover img{
+		width:12.5em;
+		height:6.5em;
+}
+.media-left.fixed{
+	width:12em;
+	height:6em;
+	overflow:hidden;
+}
+
+@media(max-width:827px){
+	
+	.leftmode{
+		display:none;
+	}
+	.verticalmode{
+		display:block;
+	}
+
+}
+@media(max-width:28em){
+	.media img{
+		width:6em;
+		height:3em;
+	}
+	.media a:hover img{
+			width:6.25em;
+			height:3.25em;
+	}
+	
+}

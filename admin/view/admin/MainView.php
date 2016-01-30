@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
     <link rel="stylesheet" type="text/css" href="<?php echo ROOT_PATH; ?>/public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo ROOT_PATH; ?>/public/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo ROOT_PATH; ?>/public/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo ROOT_PATH; ?>/public/css/admin/menu.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo ROOT_PATH; ?>/public/css/admin/style.css">
     <title>Cafe Admin</title>
 </head>
 
@@ -43,7 +44,8 @@
     </ul>
     <!-- /.navbar-top-links -->
 
-    <?php $_SESSION['leftMenu']->outputMenu()?>
+    <?php   $leftMenu = new LeftMenu($_SESSION['menuArr']);
+    $leftMenu ->outputMenu()?>
 
     <!-- sidebar -->
 </nav>
@@ -52,77 +54,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
+                    <h1 class="page-header">Welcome to Tsun Cafe</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Blank</h1>
-                    <p>事实上，的确有一些CSS家族的成员（CSS选择器）被分类为伪元素比如：:first-line, :first-letter, ::selection, :before and :after。但是，就本文而言，我们将把我们探讨的范围限制在:before 和 :after这两个元素上。因此，本文中的“伪元素”将特指这两个伪元素（:before 和 :after），我们将从基础入手，来研究这个独特的主题。</p>
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-
         </div>
         <!-- /.container-fluid -->
     </div>
@@ -134,7 +69,8 @@
 
 <script src="<?php echo ROOT_PATH;?>/public/js/jquery-1.11.3.min.js"></script>
 <script src="<?php echo ROOT_PATH;?>/public/js/bootstrap.min.js"></script>
-<script src="<?php echo ROOT_PATH;?>/public/js/admin/menu.js"></script>
+<script src="<?php echo ROOT_PATH;?>/public/js/admin/admin/mainView.js"></script>
+<script src="<?php echo ROOT_PATH;?>/public/js/admin/base/menu.js"></script>
 <script src="<?php echo ROOT_PATH;?>/public/js/base.js"></script>
 </body>
 

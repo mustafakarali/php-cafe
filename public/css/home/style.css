@@ -1,0 +1,55 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+/*for IE to recognise the html5 tags */
+main,nav,header,footer,aside,figure{
+	display:block;
+}
+@font-face
+{
+font-family: Comfortaa;
+src: url('Comfortaa.ttf');
+src: url('Comfortaa.eot');
+}
+
+body{
+}
+nav{
+	font-family: Comfortaa;
+	font-size:1.5em;
+	font-weight:bold;
+}
+#navbar-collapse-1 a:hover{
+	color:#FFFF00;
+}
+.opacity8{
+	opacity:0.8;
+}
+figure{
+	width:100%;
+}
+img{
+	width:100%;
+}
+
+
+.copyright{
+	background:#111;
+	font-size:13px;
+	text-align:center;
+	color:#555;
+	padding-top:14px;
+	padding-bottom:20px;
+	border-top:1px solid #303030
+}
+.copyright span{
+	margin:0 .5em;
+	color:#E4E4E4;
+}
+.copyright a{color:#E4E4E4;}
+
+.fixedcopyright{
+	position:fixed;
+}

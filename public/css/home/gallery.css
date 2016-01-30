@@ -1,0 +1,97 @@
+body{
+	background-color:#EEEEEE;
+}
+h1{
+	font-family:Merriweather;
+	margin-bottom:1em;
+}
+main{
+	margin-top:4em;
+}
+.video{
+	width:35em;
+	height:25em;
+	border:10px solid #fff;
+}
+
+.container img:hover{
+    box-shadow: 15px 15px 20px rgba(50,50,50,0.4);
+    transform:rotate(0deg) scale(1.20);
+    -webkit-transform:rotate(0deg) scale(1.20);
+    z-index: 2;
+}
+.container img{
+    padding: 0.7em 0.7em 1em;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+	margin-top:8em;
+    z-index: 1;
+}
+.pic1{
+
+    transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+}
+
+.pic2{
+
+    transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+}
+.pic3{
+
+    transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+}
+
+.pic4{
+
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+
+.pic5{
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+}
+.pic6{
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+}
+
+.pic7{
+    transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+}
+.pic8{
+    transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+}
+.pic9{
+    transform:rotate(15deg);
+    -webkit-transform:rotate(15deg);
+}
+.pic10{
+	
+	transform:rotate(-15deg);
+	-webkit-transform:rotate(-15deg);
+}
+@media(max-width:30em){
+	.video{
+		width:25em;
+		height:17em;
+		border:5px solid #fff;
+	}
+	.container img{
+		padding: 0.2em 0.2em 0.4em;
+		margin-top:5em;
+	}
+}
+
+

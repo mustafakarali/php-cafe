@@ -1,0 +1,92 @@
+body {
+	overflow-y:hidden
+}
+h1,h2{
+	font-family:Merriweather;
+}
+
+#welcome{
+	position:absolute;
+	top:15%;
+	z-index:2;
+	color:white;
+}
+
+#topfood h1{
+	margin:0;
+	color:white;
+}
+#topfood h3{
+	color:white;
+}
+#wrapper{
+	width:85%;
+	margin:auto;
+}
+#myaudio{
+	position:fixed;
+	top:5em;
+	left:1em;
+}
+.carousel-control.center{
+	top:50%;
+}
+.animated { 
+    -webkit-animation-duration: 1.5s; 
+    animation-duration: 1.5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+.fadeInDown{ 
+    opacity: 0; 
+    -webkit-transform: translateY(-400px); 
+    transform: translateY(-400px);
+}
+.fadeInDown.go { 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+.fadeInUp{ 
+    opacity: 0; 
+    -webkit-transform: translateY(400px); 
+    transform: translateY(400px);
+}
+.fadeInUp.go { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+@media(max-width:400px){
+	#myaudio{
+		
+		bottom:4.5em;
+	}
+}
