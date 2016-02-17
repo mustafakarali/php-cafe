@@ -14,6 +14,6 @@
 return [
 
     'login' => 'admin/LoginController.php',
-    'product' => 'product/ProductController.php'
-
+    'product' => 'product/ProductController.php',
+    'order' => 'order/OrderController.php'
 ];
